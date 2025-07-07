@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kearifan Lokal dan Budaya Boyolali</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom fonts & styles */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #1e1e1e;
+            color: #f5f5f5;
+        }
+        a {
+            transition: all 0.3s ease;
+        }
+        a:hover {
+            color: #ef4444;
+        }
+        .btn {
+            border: 2px solid #ef4444;
+            padding: 0.5rem 1.5rem;
+            border-radius: 9999px;
+            font-weight: 600;
+            color: #ef4444;
+            display: inline-block;
+            cursor: pointer;
+            background: transparent;
+        }
+        .btn:hover {
+            background-color: #ef4444;
+            color: #1e1e1e;
+        }
+        h1, h2, h3 {
+            letter-spacing: 0.03em;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero section -->
+    <section class="relative">
+        <img 
+          src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/007f2510-28dc-49ee-a636-e200f7460ac5.png" 
+          alt="Panorama Gunung Merbabu di Boyolali dengan langit cerah dan pemandangan alam yang hijau" 
+          class="w-full h-[90vh] object-cover brightness-75" 
+          onerror="this.style.display='none'"
+        />
+        <div class="absolute inset-0 flex flex-col justify-center px-8 md:px-20 lg:px-40">
+            <h1 class="text-5xl font-bold mb-3 max-w-lg">Kearifan Lokal dan Budaya Boyolali</h1>
+            <p class="text-lg max-w-md mb-6">Jelajahi kekayaan budaya, tradisi, dan kearifan lokal Kabupaten Boyolali, Jawa Tengah yang luar biasa.</p>
+            <button class="btn w-max" id="exploreBoyolaliBtn">Explore Boyolali</button>
+        </div>
+    </section>
+
+    <!-- Introduction section -->
+    <section class="bg-gray-900 px-8 md:px-20 lg:px-40 py-12 flex flex-col md:flex-row gap-10 md:gap-24 items-center" id="aboutBoyolali">
+        <div class="md:w-1/2">
+            <h2 class="text-3xl font-semibold mb-4">Tentang Boyolali</h2>
+            <p class="mb-4 leading-relaxed text-gray-300">
+                Boyolali merupakan sebuah kabupaten di Provinsi Jawa Tengah, yang dikenal dengan 
+                kekayaan alam termasuk pegunungan dan dataran tinggi yang asri. Selain keindahan alamnya, 
+                Boyolali juga menyimpan kekayaan budaya dan kearifan lokal yang masih terjaga hingga kini. 
+            </p>
+            <p class="mb-4 leading-relaxed text-gray-300">
+                Budaya-budaya unik dari masyarakat Boyolali tercermin dalam tradisi, kesenian, kuliner, serta 
+                upacara adat yang diwariskan secara turun-temurun. Mari kita telusuri lebih dalam keindahan budaya Boyolali.
+            </p>
+            <p class="text-red-400 font-semibold">Selamat Menikmati Penjelajahan Budaya Boyolali!</p>
+        </div>
+        <div class="md:w-1/2 rounded-lg overflow-hidden shadow-lg bg-gray-800">
+          <img 
+            src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d3f461cd-3739-444e-9e85-2ce3a9546f8f.png" 
+            alt="Seorang pria mengenakan busana adat tradisional Boyolali berdiri di latar belakang Gunung Merbabu" 
+            class="w-full h-auto object-cover" 
+            onerror="this.style.display='none'"
+          />
+        </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section class="px-8 md:px-20 lg:px-40 py-12 bg-gray-800">
+        <h2 class="text-2xl font-semibold mb-8 text-center">Destinasi Budaya dan Alam di Boyolali</h2>
+        <div class="grid grid-cols-2 md:grid-cols-5 gap-6 text-center">
+            <a href="pages/gn_merbabu.html" class="rounded overflow-hidden bg-gray-700 shadow-lg cursor-pointer hover:scale-105 transition-transform">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/390e1111-3d24-4cab-b3d7-79ff0ccdf9fc.png" alt="Pemandangan Gunung Merbabu dengan langit biru dan hamparan pepohonan hijau" class="w-full h-36 object-cover" onerror="this.style.display='none'"/>
+                <p class="p-3 text-white font-medium">Gunung Merbabu</p>
+            </a>
+            <a href="pages/ds_keris.html" class="rounded overflow-hidden bg-gray-700 shadow-lg cursor-pointer hover:scale-105 transition-transform">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/c5b68ec8-3a14-4199-a354-21a26db4d318.png" alt="Pemandangan desa tradisional Boyolali dengan rumah-rumah joglo khas Jawa" class="w-full h-36 object-cover" onerror="this.style.display='none'"/>
+                <p class="p-3 text-white font-medium">Desa Keris</p>
+            </a>
+            <a href="pages/air_terjun_sigamplek.html" class="rounded overflow-hidden bg-gray-700 shadow-lg cursor-pointer hover:scale-105 transition-transform">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1ff68bb8-cd70-444b-81a4-dbda3d3dce85.png" alt="Air terjun Sigemplek yang indah dengan aliran air jernih yang turun dari tebing batu" class="w-full h-36 object-cover" onerror="this.style.display='none'"/>
+                <p class="p-3 text-white font-medium">Air Terjun Sigemplek</p>
+            </a>
+            <a href="pages/perkebunan_tebu.html" class="rounded overflow-hidden bg-gray-700 shadow-lg cursor-pointer hover:scale-105 transition-transform">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/4052bc5b-2534-447e-b362-10298227a304.png" alt="Petani memanen tebu, salah satu produk unggulan dari Boyolali" class="w-full h-36 object-cover" onerror="this.style.display='none'"/>
+                <p class="p-3 text-white font-medium">Perkebunan Tebu</p>
+            </a>
+            <a href="pages/pasar_tradisional.html" class="rounded overflow-hidden bg-gray-700 shadow-lg cursor-pointer hover:scale-105 transition-transform">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7c3569a2-29ac-4475-bb99-d56e9b2e35d1.png" alt="Suasana pasar tradisional yang penuh warna dan aktivitas di Boyolali" class="w-full h-36 object-cover" onerror="this.style.display='none'"/>
+                <p class="p-3 text-white font-medium">Pasar Tradisional</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- Ethnic Culture Section -->
+    <section class="bg-gray-900 px-8 md:px-20 lg:px-40 py-12">
+        <h2 class="text-2xl font-semibold mb-8 text-center">Budaya dan Kearifan Lokal Boyolali</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden">
+                <img 
+                  src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/571c10ae-1d7b-4807-97b3-f98ff6c4c0b0.png" 
+                  alt="Pertunjukan Wayang Golek khas Boyolali dengan dalang dan boneka kayu tradisional di panggung tradisional" 
+                  class="w-full h-48 object-cover" 
+                  onerror="this.style.display='none'"
+                />
+                <div class="p-5">
+                    <h3 class="text-xl font-semibold mb-3 text-red-400">Wayang Golek</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Seni pertunjukan boneka kayu Wayang Golek masih sangat hidup di Boyolali. Pertunjukan ini 
+                        menjadi media penyampaian cerita-cerita klasik dan nilai-nilai budaya Jawa yang kaya akan filosofi. 
+                        Wayang Golek Boyolali khas dengan gaya pementasan dan cerita lokal.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden">
+                <img 
+                  src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/57bd2cac-879b-494a-aca5-70fe094841e7.png" 
+                  alt="Sepiring nasi tiwul dengan lauk tradisional khas Boyolali disajikan di atas piring bambu" 
+                  class="w-full h-48 object-cover" 
+                  onerror="this.style.display='none'"
+                />
+                <div class="p-5">
+                    <h3 class="text-xl font-semibold mb-3 text-red-400">Kuliner Nasi Tiwul</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Nasi Tiwul adalah makanan tradisional yang terbuat dari singkong gaplek yang dikeringkan dan 
+                        diolah sehingga menjadi makanan pokok pengganti nasi. Kuliner ini melambangkan kearifan lokal masyarakat Boyolali dalam memanfaatkan bahan lokal untuk bertahan hidup.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden">
+                <img 
+                  src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/758e568d-6c11-4bea-8418-fe3760836548.png" 
+                  alt="Upacara tradisional Sedekah Bumi di Boyolali, masyarakat mengenakan pakaian adat dan membawa sesajen" 
+                  class="w-full h-48 object-cover" 
+                  onerror="this.style.display='none'"
+                />
+                <div class="p-5">
+                    <h3 class="text-xl font-semibold mb-3 text-red-400">Upacara Adat Sedekah Bumi</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Sedekah Bumi adalah tradisi tolak bala dan ungkapan rasa syukur masyarakat Boyolali atas hasil bumi yang melimpah. Upacara ini melibatkan berbagai ritual adat dan dipenuhi dengan kebersamaan masyarakat.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-400 py-6 text-center text-sm">
+        <p>Kearifan Lokal dan Budaya Boyolali © 2024. Web Desain Concept - Edbar Edition</p>
+        <p>Follow on Instagram: <a href="https://instagram.com/fa.s yafaa" target="_blank" class="underline">instagram.com/fa.s yafaa</a></p>
+    </footer>
+
+    <script>
+        document.getElementById('exploreBoyolaliBtn').addEventListener('click', function() {
+            document.getElementById('aboutBoyolali').scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    </script>
+
+</body>
+</html>
